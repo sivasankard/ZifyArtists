@@ -25,15 +25,10 @@ class ZifyDetailViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.size.width/2
         
         getArtistDetailListFromServiceManager()
-        
-//        let myBlog = "https://iosdevcenters.blogspot.com/"
-//        let url = NSURL(string: myBlog)
-//        let request = URLRequest(url: url! as URL)
-        
+    
         // init and load request in webview.
         webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: webBgView.frame.size.height))
 //        webView.navigationDelegate = self
-//        webView.load(request)
         self.webBgView.addSubview(webView)
         self.webBgView.sendSubview(toBack: webView)
     }
@@ -81,16 +76,5 @@ class ZifyDetailViewController: UIViewController {
         }
         
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
