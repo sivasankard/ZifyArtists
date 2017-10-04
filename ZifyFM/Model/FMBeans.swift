@@ -72,3 +72,33 @@ class ArtistBean: NSObject {
         }
     }
 }
+
+class ArtistDetailBean: NSObject {
+    
+    var name : String?
+    var imageUrl : String?
+    var desUrl : String?
+    
+    func getArtistDetailList(response : NSDictionary, artistBean : ArtistDetailBean) {
+
+        if let name = response["name"] as? String {
+            artistBean.name = name
+        }
+        
+        let pictures: NSArray = response["image"] as! NSArray
+        
+        for images in pictures as! [Dictionary<String, Any>] {
+            if let imageUrl = images["#text"] as? String {
+                artistBean.imageUrl = imageUrl
+            }
+        }
+        
+        let bio : NSDictionary? = response["bio"] as? NSDictionary
+        let links : NSDictionary? = bio!["links"] as? NSDictionary
+        let subLinks : NSDictionary? = links!["link"] as? NSDictionary
+        
+        if let url = subLinks!["href"] as? String {
+            artistBean.desUrl = url
+        }
+    }
+}

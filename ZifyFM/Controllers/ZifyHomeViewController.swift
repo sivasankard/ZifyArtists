@@ -12,12 +12,17 @@ class ZifyHomeViewController: UIViewController {
 
     @IBOutlet weak var fmTableView: UITableView!
     var artistListArray : NSMutableArray? = NSMutableArray()
+    var artistSearchResult : NSMutableArray? = NSMutableArray()
+    var artistLoadArray : NSMutableArray? = NSMutableArray()
+    var searchController: UISearchController!
+    var shouldShowSearchResults = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        configureSearchController()
         getArtistListFromServiceManager()
     }
 
@@ -26,6 +31,18 @@ class ZifyHomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func configureSearchController() {
+        // Initialize and perform a minimum configuration to the search controller.
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search here..."
+        searchController.searchBar.delegate = self
+        searchController.searchBar.sizeToFit()
+        
+        // Place the search bar view to the tableview headerview.
+        fmTableView.tableHeaderView = searchController.searchBar
+    }
 
     /*
     // MARK: - Navigation
@@ -49,6 +66,7 @@ class ZifyHomeViewController: UIViewController {
                     let artistBean = ArtistBean()
 
                     artistBean.getArtistsList(response: resultDict!, artistsArray: self.artistListArray!)
+                    self.artistLoadArray = NSMutableArray(array: self.artistListArray!)
                     self.fmTableView.reloadData()
                 }
             }
@@ -59,14 +77,19 @@ class ZifyHomeViewController: UIViewController {
         }
         
     }
+    
+    func filterContentForSearchText(searchText: String, scope: Int) {
+        
+    }
 
 }
 
 //MARK:- Tableview Extentios
+//MARK:- TableView DataSource
 extension ZifyHomeViewController : UITableViewDataSource {
     
  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return (self.artistListArray?.count)!
+    return (self.artistLoadArray?.count)!
     }
     
  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,7 +98,7 @@ extension ZifyHomeViewController : UITableViewDataSource {
     
     let cell : HomeFMCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.homeViewCellId, for: indexPath) as! HomeFMCell
     
-    let artisBean : ArtistBean = self.artistListArray![indexPath.row] as! ArtistBean
+    let artisBean : ArtistBean = self.artistLoadArray![indexPath.row] as! ArtistBean
     cell.nameLbl.text = artisBean.name
     cell.descLbl.text = artisBean.listeners
     let imgUrl = artisBean.picturesArray[0] as! ImagesBean
@@ -92,6 +115,7 @@ extension ZifyHomeViewController : UITableViewDataSource {
     }
 }
 
+//MARK:- TableView Delegate
 extension ZifyHomeViewController : UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -102,4 +126,50 @@ extension ZifyHomeViewController : UITableViewDelegate {
         
     }
     
+}
+
+extension ZifyHomeViewController : UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        guard let searchString = searchController.searchBar.text else {
+            return
+        }
+        
+        // Filter the data array and get only those countries that match the search text.
+        let arr = artistListArray?.filter{
+            let bean = $0 as! ArtistBean
+            return (bean.name?.lowercased().contains(searchString.lowercased()))!
+            }
+        if shouldShowSearchResults == true {
+            artistLoadArray = NSMutableArray(array: arr!)
+        }
+        // Reload the tableview.
+        fmTableView.reloadData()
+    }
+}
+
+extension ZifyHomeViewController : UISearchBarDelegate {
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        shouldShowSearchResults = true
+        fmTableView.reloadData()
+    }
+    
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        shouldShowSearchResults = false
+        self.artistLoadArray = NSMutableArray(array: self.artistListArray!)
+        fmTableView.reloadData()
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if !shouldShowSearchResults {
+            shouldShowSearchResults = true
+            fmTableView.reloadData()
+        }
+        
+        searchController.searchBar.resignFirstResponder()
+    }
+
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572D9E381F855AA800430687 /* ZifyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572D9E371F855AA800430687 /* ZifyDetailViewController.swift */; };
 		57601C7B1F84795D002F232A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601C7A1F84795D002F232A /* AppDelegate.swift */; };
 		57601C801F84795D002F232A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57601C7E1F84795D002F232A /* Main.storyboard */; };
 		57601C831F84795D002F232A /* ZifyFM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57601C811F84795D002F232A /* ZifyFM.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		572D9E371F855AA800430687 /* ZifyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZifyDetailViewController.swift; sourceTree = "<group>"; };
 		57601C771F84795D002F232A /* ZifyFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZifyFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57601C7A1F84795D002F232A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57601C7F1F84795D002F232A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				57601CA01F847A7E002F232A /* ZifyHomeViewController.swift */,
+				572D9E371F855AA800430687 /* ZifyDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				57601CA11F847A7E002F232A /* ZifyHomeViewController.swift in Sources */,
 				57601C7B1F84795D002F232A /* AppDelegate.swift in Sources */,
 				57601CA41F847CF2002F232A /* HomeFMCell.swift in Sources */,
+				572D9E381F855AA800430687 /* ZifyDetailViewController.swift in Sources */,
 				57601CA71F847EFA002F232A /* Constents.swift in Sources */,
 				57601CAA1F84800C002F232A /* ServiceManager.swift in Sources */,
 			);

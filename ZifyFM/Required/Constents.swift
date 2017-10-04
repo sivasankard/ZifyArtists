@@ -19,6 +19,8 @@ struct CellIdentifiers {
 struct Service_urls {
     static let artistUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=cher&api_key=fa2e62987b8c372e16daa60331164d12&format=json"
     
+    static let artistDetailList = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Pink+Floyd&api_key=fa2e62987b8c372e16daa60331164d12&format=json"
+    
     static let appKey = "fa2e62987b8c372e16daa60331164d12"
 }
 
