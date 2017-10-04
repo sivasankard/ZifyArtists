@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57601C7B1F84795D002F232A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601C7A1F84795D002F232A /* AppDelegate.swift */; };
+		57601C801F84795D002F232A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57601C7E1F84795D002F232A /* Main.storyboard */; };
+		57601C831F84795D002F232A /* ZifyFM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57601C811F84795D002F232A /* ZifyFM.xcdatamodeld */; };
+		57601C851F84795D002F232A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57601C841F84795D002F232A /* Assets.xcassets */; };
+		57601C881F84795D002F232A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57601C861F84795D002F232A /* LaunchScreen.storyboard */; };
+		57601C931F84795D002F232A /* ZifyFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601C921F84795D002F232A /* ZifyFMTests.swift */; };
+		57601CA11F847A7E002F232A /* ZifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601CA01F847A7E002F232A /* ZifyHomeViewController.swift */; };
+		57601CA41F847CF2002F232A /* HomeFMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601CA31F847CF2002F232A /* HomeFMCell.swift */; };
+		57601CA71F847EFA002F232A /* Constents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601CA61F847EFA002F232A /* Constents.swift */; };
+		57601CAA1F84800C002F232A /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601CA91F84800C002F232A /* ServiceManager.swift */; };
+		57601CAC1F848092002F232A /* FMBeans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57601CAB1F848092002F232A /* FMBeans.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57601C8F1F84795D002F232A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57601C6F1F84795D002F232A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57601C761F84795D002F232A;
+			remoteInfo = ZifyFM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57601C771F84795D002F232A /* ZifyFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZifyFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57601C7A1F84795D002F232A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57601C7F1F84795D002F232A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57601C821F84795D002F232A /* ZifyFM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZifyFM.xcdatamodel; sourceTree = "<group>"; };
+		57601C841F84795D002F232A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57601C871F84795D002F232A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57601C891F84795D002F232A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57601C8E1F84795D002F232A /* ZifyFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZifyFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57601C921F84795D002F232A /* ZifyFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZifyFMTests.swift; sourceTree = "<group>"; };
+		57601C941F84795D002F232A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57601CA01F847A7E002F232A /* ZifyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZifyHomeViewController.swift; sourceTree = "<group>"; };
+		57601CA31F847CF2002F232A /* HomeFMCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFMCell.swift; sourceTree = "<group>"; };
+		57601CA61F847EFA002F232A /* Constents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constents.swift; sourceTree = "<group>"; };
+		57601CA91F84800C002F232A /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		57601CAB1F848092002F232A /* FMBeans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBeans.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57601C741F84795D002F232A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57601C8B1F84795D002F232A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57601C6E1F84795D002F232A = {
+			isa = PBXGroup;
+			children = (
+				57601C791F84795D002F232A /* ZifyFM */,
+				57601C911F84795D002F232A /* ZifyFMTests */,
+				57601C781F84795D002F232A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57601C781F84795D002F232A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57601C771F84795D002F232A /* ZifyFM.app */,
+				57601C8E1F84795D002F232A /* ZifyFMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57601C791F84795D002F232A /* ZifyFM */ = {
+			isa = PBXGroup;
+			children = (
+				57601C7A1F84795D002F232A /* AppDelegate.swift */,
+				57601C9F1F847A5B002F232A /* Views */,
+				57601C9E1F847A53002F232A /* Model */,
+				57601C9D1F847A49002F232A /* Controllers */,
+				57601CA51F847EDA002F232A /* Required */,
+				57601C7E1F84795D002F232A /* Main.storyboard */,
+				57601C841F84795D002F232A /* Assets.xcassets */,
+				57601C861F84795D002F232A /* LaunchScreen.storyboard */,
+				57601C891F84795D002F232A /* Info.plist */,
+				57601C811F84795D002F232A /* ZifyFM.xcdatamodeld */,
+			);
+			path = ZifyFM;
+			sourceTree = "<group>";
+		};
+		57601C911F84795D002F232A /* ZifyFMTests */ = {
+			isa = PBXGroup;
+			children = (
+				57601C921F84795D002F232A /* ZifyFMTests.swift */,
+				57601C941F84795D002F232A /* Info.plist */,
+			);
+			path = ZifyFMTests;
+			sourceTree = "<group>";
+		};
+		57601C9D1F847A49002F232A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57601CA01F847A7E002F232A /* ZifyHomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57601C9E1F847A53002F232A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57601CAB1F848092002F232A /* FMBeans.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57601C9F1F847A5B002F232A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57601CA21F847CC6002F232A /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57601CA21F847CC6002F232A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57601CA31F847CF2002F232A /* HomeFMCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		57601CA51F847EDA002F232A /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				57601CA81F847F9B002F232A /* Services */,
+				57601CA61F847EFA002F232A /* Constents.swift */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		57601CA81F847F9B002F232A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				57601CA91F84800C002F232A /* ServiceManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57601C761F84795D002F232A /* ZifyFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57601C971F84795D002F232A /* Build configuration list for PBXNativeTarget "ZifyFM" */;
+			buildPhases = (
+				57601C731F84795D002F232A /* Sources */,
+				57601C741F84795D002F232A /* Frameworks */,
+				57601C751F84795D002F232A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZifyFM;
+			productName = ZifyFM;
+			productReference = 57601C771F84795D002F232A /* ZifyFM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57601C8D1F84795D002F232A /* ZifyFMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57601C9A1F84795D002F232A /* Build configuration list for PBXNativeTarget "ZifyFMTests" */;
+			buildPhases = (
+				57601C8A1F84795D002F232A /* Sources */,
+				57601C8B1F84795D002F232A /* Frameworks */,
+				57601C8C1F84795D002F232A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57601C901F84795D002F232A /* PBXTargetDependency */,
+			);
+			name = ZifyFMTests;
+			productName = ZifyFMTests;
+			productReference = 57601C8E1F84795D002F232A /* ZifyFMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57601C6F1F84795D002F232A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Siva Sankar";
+				TargetAttributes = {
+					57601C761F84795D002F232A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					57601C8D1F84795D002F232A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57601C761F84795D002F232A;
+					};
+				};
+			};
+			buildConfigurationList = 57601C721F84795D002F232A /* Build configuration list for PBXProject "ZifyFM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57601C6E1F84795D002F232A;
+			productRefGroup = 57601C781F84795D002F232A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57601C761F84795D002F232A /* ZifyFM */,
+				57601C8D1F84795D002F232A /* ZifyFMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57601C751F84795D002F232A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57601C881F84795D002F232A /* LaunchScreen.storyboard in Resources */,
+				57601C851F84795D002F232A /* Assets.xcassets in Resources */,
+				57601C801F84795D002F232A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57601C8C1F84795D002F232A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57601C731F84795D002F232A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57601C831F84795D002F232A /* ZifyFM.xcdatamodeld in Sources */,
+				57601CAC1F848092002F232A /* FMBeans.swift in Sources */,
+				57601CA11F847A7E002F232A /* ZifyHomeViewController.swift in Sources */,
+				57601C7B1F84795D002F232A /* AppDelegate.swift in Sources */,
+				57601CA41F847CF2002F232A /* HomeFMCell.swift in Sources */,
+				57601CA71F847EFA002F232A /* Constents.swift in Sources */,
+				57601CAA1F84800C002F232A /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57601C8A1F84795D002F232A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57601C931F84795D002F232A /* ZifyFMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57601C901F84795D002F232A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57601C761F84795D002F232A /* ZifyFM */;
+			targetProxy = 57601C8F1F84795D002F232A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57601C7E1F84795D002F232A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57601C7F1F84795D002F232A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57601C861F84795D002F232A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57601C871F84795D002F232A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57601C951F84795D002F232A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57601C961F84795D002F232A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57601C981F84795D002F232A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QC23GL9YS;
+				INFOPLIST_FILE = ZifyFM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.ZifyFM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57601C991F84795D002F232A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QC23GL9YS;
+				INFOPLIST_FILE = ZifyFM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.ZifyFM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57601C9B1F84795D002F232A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QC23GL9YS;
+				INFOPLIST_FILE = ZifyFMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.ZifyFMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZifyFM.app/ZifyFM";
+			};
+			name = Debug;
+		};
+		57601C9C1F84795D002F232A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QC23GL9YS;
+				INFOPLIST_FILE = ZifyFMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siva.ZifyFMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZifyFM.app/ZifyFM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57601C721F84795D002F232A /* Build configuration list for PBXProject "ZifyFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57601C951F84795D002F232A /* Debug */,
+				57601C961F84795D002F232A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57601C971F84795D002F232A /* Build configuration list for PBXNativeTarget "ZifyFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57601C981F84795D002F232A /* Debug */,
+				57601C991F84795D002F232A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57601C9A1F84795D002F232A /* Build configuration list for PBXNativeTarget "ZifyFMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57601C9B1F84795D002F232A /* Debug */,
+				57601C9C1F84795D002F232A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57601C811F84795D002F232A /* ZifyFM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57601C821F84795D002F232A /* ZifyFM.xcdatamodel */,
+			);
+			currentVersion = 57601C821F84795D002F232A /* ZifyFM.xcdatamodel */;
+			path = ZifyFM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57601C6F1F84795D002F232A /* Project object */;
+}
